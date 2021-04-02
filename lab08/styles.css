@@ -15,7 +15,7 @@ body{
     background-color: #ceddde;
 }
 body {
-    color: #ffffff
+    color: #000000
 }
 nav a:hover {background-color: #1d88f2}
 
@@ -29,3 +29,8 @@ nav{margin-bottom: 30px}
 .group1 {
     float: Left 
 }
+.group1 {display: flex;}
+.group1 {padding: 20px;}
+.group1, .group2 {margin: 10px;}
+.group1 {flex: 1; background-color: #ffffff; border-radius: 1em}
+.group2 {flex: 2; background-color: #ffffff; border-radius: 1em}
