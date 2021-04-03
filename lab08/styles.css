@@ -27,8 +27,9 @@ nav{margin-bottom: 30px}
 .quote {float:right}
 
 .group1 {
-    float: Left 
+    float: left 
 }
+.clear {clear: left;}
 .group1 {display: flex;}
 .group1 {padding: 20px;}
 .group1, .group2 {margin: 10px;}
