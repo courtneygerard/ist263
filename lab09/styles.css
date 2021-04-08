@@ -45,5 +45,7 @@ nav{margin-bottom: 30px}
 .box1, .box2 {flex: 1px;}
 
 @media only screen and (max-width: 600px) {
-    
+    nav a {width: 100%}
+    nav a {display: block;}
+    span {display: none;}
 }
