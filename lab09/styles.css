@@ -1,0 +1,39 @@
+h1 {
+    color:#e37b5b;
+}
+a:link {
+    color: #1d88f2
+}
+a:visited {
+    color: #e35b5b;
+}
+a:hover {
+    color: #8000ff;
+    background-color: #c7edfc;
+}
+body{
+    background-color: #ceddde;
+}
+body {
+    color: #000000
+}
+nav a:hover {background-color: #1d88f2}
+
+nav { 
+    padding: 10px;
+}
+nav{margin-bottom: 30px}
+
+.quote {float:right}
+
+.group1 {
+    float: left 
+}
+.clear {clear: left;}
+.group1 {display: flex;}
+.group1 {padding: 20px;}
+.group1, .group2 {margin: 10px;}
+.group1 {flex: 1; order: 1; background-color: #ffffff; border-radius: 1em}
+.group2 {flex: 2; order: 2; background-color: #ffffff; border-radius: 1em}
+.group2 {padding: 20px;}
+.group2 {display: flex;}
