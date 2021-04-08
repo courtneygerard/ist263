@@ -21,6 +21,7 @@ nav a:hover {background-color: #1d88f2}
 
 nav { 
     padding: 10px;
+    background-color: #f7beb2
 }
 nav{margin-bottom: 30px}
 
@@ -39,3 +40,10 @@ nav{margin-bottom: 30px}
 .group2 {display: flex;}
 
 .mainimage {max-width: 100%;}
+
+
+.box1, .box2 {flex: 1px;}
+
+@media only screen and (max-width: 600px) {
+    
+}
