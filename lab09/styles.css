@@ -37,3 +37,5 @@ nav{margin-bottom: 30px}
 .group2 {flex: 2; order: 2; background-color: #ffffff; border-radius: 1em}
 .group2 {padding: 20px;}
 .group2 {display: flex;}
+
+.mainimage {max-width: 100%;}
