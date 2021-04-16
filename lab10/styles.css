@@ -1,15 +1,15 @@
 h1 {
-    color:#e37b5b;
+    color:#E37B5B;
 }
 a:link {
     color: #1d88f2
 }
 a:visited {
-    color: #e35b5b;
+    color: #E37B5B;
 }
 a:hover {
     color: #8000ff;
-    background-color: #c7edfc;
+    background-color: #3B5959;
 }
 body{
     background-color: #ceddde;
