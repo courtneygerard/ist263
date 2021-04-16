@@ -5,8 +5,9 @@ a:link {
     color: #1d88f2
 }
 a:visited {
-    color: #e35b5b;
+    color: #e35b5b; 
 }
+
 a:hover {
     color: #8000ff;
     background-color: #c7edfc;
@@ -37,3 +38,4 @@ nav{margin-bottom: 30px}
 .group2 {flex: 2; order: 2; background-color: #ffffff; border-radius: 1em}
 .group2 {padding: 20px;}
 .group2 {display: flex;}
+
