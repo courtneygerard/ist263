@@ -2,13 +2,13 @@ h1 {
     color:#ff764d;
 }
 a:link {
-    color: #1d88f2
+    color: #9cbbbb
 }
 a:visited {
     color: #bd6348;
 }
 a:hover {
-    color: #8000ff;
+    color: #ffffff;
     background-color: #9cbbbb;
 }
 body{
@@ -17,7 +17,7 @@ body{
 body {
     color: #000000
 }
-nav a:hover {background-color: #1d88f2}
+nav a:hover {background-color: #9cbbbb}
 
 nav { 
     padding: 10px;
