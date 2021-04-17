@@ -2,10 +2,10 @@ h1 {
     color:#224567;
 }
 a:link {
-    color: #9cbbbb
+    color: #CDE4E4
 }
 a:visited {
-    color: #224567;
+    color: #ffffff;
 }
 a:hover {
     color: #000000;
@@ -21,7 +21,7 @@ nav a:hover {background-color: #CDE4E4}
 
 nav { 
     padding: 10px;
-    background-color: #ffffff
+    background-color: #224567
 }
 nav{margin-bottom: 30px}
 
