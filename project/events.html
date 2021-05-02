@@ -5,15 +5,135 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Events</title>
         <link rel="stylesheet" href="stylesheet.css">
+ <style>
+     .naturalselection {
+  background-color: #b4c8ce;
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+.xgames {
+  background-color: #b4c8ce;
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+            * {
+  box-sizing: border-box;}
+  .container {
+  position: relative;}
+  .mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.caption-container{
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 16.66%;
+}
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+ </style>
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
     </head>
+
 <body>
-    <nav>
-        <a href="home.html">Home</a>
+   
+    <div class="navbar">
+        <a href="home.html" class="active">Home</a>
         <a href="articles.html">Articles</a>
-        <a href="mountains.html">Mountains</a>
         <a href="events.html">Events</a>
-    </nav>
-<article>
+    <div class="dropdown">
+        <button class="dropbtn">Mountains
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="coppermountain.html">Copper Mountain, Colorado</a>
+            <a href="bigsky.html">Big Sky, Montana</a>
+            <a href="jacksonhole.html">Jackson Hole, Wyoming</a>
+            <a href="aspen.html">Aspen Snowmass, Colorado</a>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Events</h1>
+      </div>
+<div class="naturalselection">
     <h2>Natural Selection Tour</h2>
     <p>
         The Natural Selection Tour is the first unconventional winter sports competition to include Olympians and big mountain film riders. Competitors compete on the most beautiful, raw, and challenging terrain. The first week of the tour took place in Jackson Hole on February 3rd to the 9th. The best snowboarders in the world competed in the deepest powder ever. Zoi Sadowski-Synnott took the first place title for the women and Mark McMorris for the men. T- Bird and Jeff Moran said “This event allowed people to see more aspects of snowboarding. This is what we all know and love about snowboarding. It makes me feel warm inside to know that what we experience as a culture can now be experienced in a really engaging way by people who are not necessarily directly involved in snowboarding. They get to see what it is about our lifestyle, our culture and our community that’s so strong.” The next stop is Baldface Mountain in Canada. The tour had to make a few alterations due to covid restrictions. 10 new athletes will be paired up with a videographer in the backcountry of Canada. The riders best lines will be broadcasted on March 19th.
@@ -32,17 +152,70 @@
         Leanne Pelosi <br>
         Marie-France Roy <br>
         <br>
-        <a href="https://www.youtube.com/watch?v=Kpf_R7oSd70">Check out the highlights from Jackson Hole</a>
+        <h2>Check out the highlights from Jackson Hole</h2> <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Kpf_R7oSd70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </p>
-      <h2>Photo Gallery from Jackson Hole</h2>
-      <img src="media/naturalselection.jpeg" alt="natural selection" class="natselection">
-      <img src="media/nselection2.jpg" alt="natural selection 2" class="natselection2">
-      <img src="media/nselection3.jpg" alt="natural selection 3" class="natselection3">
-      <img src="media/nselection4.jpeg" alt="natural selection 4" class="natselection4">
-      <img src="media/nselection5.jpg" alt="natural selection 5" class="natselection5">
-      <img src="media/nselection6.jpg" alt="natural selection 6" class="natselection6">
-</article>
-<article>
+      <h2>Photo Gallery</h2>
+    <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+              <img src="media/naturalselection.jpeg" style="width:100%">
+          </div>
+     <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+              <img src="media/nselection2.jpg" style="width:100%">
+          </div>
+     <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+              <img src="media/nselection3.jpg" style="width:100%">
+          </div>
+     <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+              <img src="media/nselection4.jpeg" style="width:100%">
+          </div>
+    <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+              <img src="media/nselection5.jpg" style="width:100%">
+          </div>
+    <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+              <img src="media/nselection6.jpg" style="width:100%">
+          </div> 
+
+         <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="media/naturalselection.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Natural Selection">
+    </div>
+    <div class="column"> 
+        <img class="demo cursor" src="media/nselection2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Natural Selection">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="media/nselection3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Natural Selection">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="media/nselection4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Natural Selection">
+      </div> 
+      <div class="column">
+        <img class="demo cursor" src="media/nselection5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Natural Selection">
+         </div>   
+         <div class="column">
+            <img class="demo cursor" src="media/nselection6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Natural Selection">
+          </div>
+        </div>
+      </div> 
+ </div>
+
+ <div class="xgames">
     <h2>2021 XGames Winners</h2>
     <p>
         The 2021 Winter XGames were held in Aspen Colorado at Buttermilk Mountain, where they have been held since 2002.<br>
@@ -79,11 +252,8 @@ Bronze: Mons Roisland (NOR)<br>
 Gold: Yuto Totsuka (JPN) <br>
 Silver: Scotty James (AUS) <br>
 Bronze: Ruka Hirano (JPN)<br>
-    </p>
-<img src="media/xgameschloe.jpg" alt="chloe xgames gold" class="xgames">
-<img src="media/xgamesdusty.jpg" alt="dusty xgames gold" class="xgames2"> 
-<img src="media/xgamesmedals.jpg" alt="xgames medals" class="xgames3">
-<img src="media/xgameschloe2.jpg" alt="chloe halfpipe trick" class="xgames4"> 
-<img src="media/xgamesjamie.jpeg" alt="jaime xgames games gold" class="xgames5">
-<img src="media/xgamesmarcus.jp2" alt="marcus big air trick" class="xgames6">
-</article>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t2I6TrJ3j18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</body>
+</html>
