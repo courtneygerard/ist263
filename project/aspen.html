@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
 <link rel="shortcut icon" type="images/x-icon" href="favicon.ico"> 
+       
         <style>
             #myImg {
                 border-radius: 5px;
@@ -21,7 +22,7 @@
               .modal {
                 display: none; 
                 position: fixed; 
-                z-index: 1;
+                z-index: 1; 
                 padding-top: 100px; 
                 left: 0;
                 top: 0;
@@ -32,7 +33,7 @@
                 background-color: rgba(0,0,0,0.9); 
               }
               
-            
+              
               .modal-content {
                 margin: auto;
                 display: block;
@@ -40,7 +41,7 @@
                 max-width: 700px;
               }
               
-            
+              
               #caption {
                 margin: auto;
                 display: block;
@@ -52,7 +53,7 @@
                 height: 150px;
               }
               
-            
+             
               .modal-content, #caption {  
                 -webkit-animation-name: zoom;
                 -webkit-animation-duration: 0.6s;
@@ -70,7 +71,7 @@
                 to {transform:scale(1)}
               }
               
-              
+              /* The Close Button */
               .close {
                 position: absolute;
                 top: 15px;
@@ -88,71 +89,83 @@
                 cursor: pointer;
               }
               
+              /* 100% Image Width on Smaller Screens */
               @media only screen and (max-width: 700px){
                 .modal-content {
                   width: 100%;
                 }
               }
-              </style>
-             
-</head>
-
-<body>
-    <div class="navbar">
-        <a href="home.html" class="active">Home</a>
-        <a href="articles.html">Articles</a>
-        <a href="events.html">Events</a>
-    <div class="dropdown">
-        <button class="dropbtn">Mountains
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="coppermountain.html">Copper Mountain, Colorado</a>
-            <a href="bigsky.html">Big Sky, Montana</a>
-            <a href="jacksonhole.html">Jackson Hole, Wyoming</a>
-            <a href="aspen.html">Aspen Snowmass, Colorado</a>
+    
+              .aspen {
+      background-color: #b4c8ce;
+      width: 100%;
+      padding: 10px 15px;
+      margin-top: 7px;
+    }
+      </style>
+    
+        <div class="navbar">
+      
+            <a href="home.html" class="active">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="events.html">Events</a>
+        <div class="dropdown">
+            <button class="dropbtn">Mountains
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="coppermountain.html">Copper Mountain, Colorado</a>
+                <a href="bigsky.html">Big Sky, Montana</a>
+                <a href="jacksonhole.html">Jackson Hole, Wyoming</a>
+                <a href="aspen.html">Aspen Snowmass, Colorado</a>
+            </div>
         </div>
-    </div>
-</div>
-    <div class="header">
-        <h1>Aspen Snowmass, Colorado</h1>
-      </div>
-  <div class="Aspen">
-  <p> Aspen Snowmass is home to four unique mountains: Aspen Mountain, Aspen Highlands, Buttermilk and Snowmass. The sun shines 300 days a year and the other days are filled with snowfall covering the mountains in beautiful powder. You can ski right down to historic Aspen with over 100 bars and restaurants. Aspen Mountain and Highlands offer the steepest terrain, recommended for skiers and snowboarders looking for a thrill while Buttermilk and Snowmass are more family oriented. </p>
-
-  
-  <img id="myImg" src="media/aspen-trailmap.jpg" alt="Aspen Trailmap" style="width:100%;max-width:300px">
-  
-
-
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01" alt="modal">
-    <div id="caption"></div>
-  </div>
-</div>
-<script>
+        </div>
+      
+       <body>
+        <div class="header">
+            <h1>Aspen Snowmass, Colorado</h1>
+          </div>
+          <div class="aspen">
+          <p>Aspen Snowmass is home to four unique mountains: Aspen Mountain, Aspen Highlands, Buttermilk and Snowmass. The sun shines 300 days a year and the other days are filled with snowfall covering the mountains in beautiful powder. You can ski right down to historic Aspen with over 100 bars and restaurants. Aspen Mountain and Highlands offer the steepest terrain, recommended for skiers and snowboarders looking for a thrill while Buttermilk and Snowmass are more family oriented.
+          </p>
+        
+          
+          <img id="myImg" src="media/bigsky-trailmap.jpg" alt="Big Sky Trailmap" style="width:100%;max-width:300px">
+          
+        
+         <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="modal">
+            <div id="caption"></div>
+          </div>
+        </div>
+        <script>
    
-    var modal = document.getElementById("myModal");
-    
-    
-    var img = document.getElementById("myImg");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    }
-    
-
-    var span = document.getElementsByClassName("close")[0];
-    
- 
-    span.onclick = function() { 
-      modal.style.display = "none";
-    }
-    </script>
-
+            var modal = document.getElementById("myModal");
+            
+            
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            
+           
+            var span = document.getElementsByClassName("close")[0];
+            
+           
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+            </script>
+       
+         
 </body>  
 </html>
+
+
+
